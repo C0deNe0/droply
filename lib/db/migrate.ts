@@ -9,7 +9,7 @@ dotenv.config({ path: ".env.local" });
 if (!process.env.DATABASE_URL!) {
   throw new Error("Database url not set in .env.local ");
 }
-
+//this is migraption file
 async function runMigration() {
   try {
     const sql = neon(process.env.DATABASE_URL!);
