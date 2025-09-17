@@ -14,10 +14,18 @@
   },
   "dependencies": {
     "@clerk/nextjs": "^6.29.0",
+    "@heroui/button": "^2.2.26",
+    "@heroui/card": "^2.2.24",
+    "@heroui/divider": "^2.2.19",
+    "@heroui/input": "^2.4.27",
+    "@heroui/system": "^2.4.22",
+    "@heroui/theme": "^2.4.22",
     "@hookform/resolvers": "^5.2.1",
     "@neondatabase/serverless": "^1.0.1",
     "dotenv": "^17.2.1",
     "drizzle-orm": "^0.44.4",
+    "framer-motion": "^12.23.14",
+    "lucide-react": "^0.544.0",
     "next": "15.4.5",
     "react": "19.1.0",
     "react-dom": "19.1.0",
@@ -34,6 +42,7 @@
     "eslint": "^9",
     "eslint-config-next": "15.4.5",
     "tailwindcss": "^4",
+    "tsx": "^4.20.5",
     "typescript": "^5"
   }
 }

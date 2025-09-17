@@ -18,3 +18,5 @@ export const signUpSchema = z
     message: "Password did not match",
     path: ["passwordConfimation"],
   });
+
+// refine is used to add custom validation to the schema. In this case, we are checking if the password and passwordConfirmation fields match. If they don't, we add an error message to the passwordConfirmation field.
