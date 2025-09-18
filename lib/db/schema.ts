@@ -9,10 +9,11 @@ import {
 import { relations } from "drizzle-orm";
 
 export const files = pgTable("files", {
-  id: uuid("id").defaultRandom().primaryKey(),
+  id: uuid("id").defaultRandom().primaryKey(), // =>unique id
+
   name: text("name").notNull(),
   path: text("path").notNull(),
-  size: integer("size").notNull(),
+  size: integer("size").notNull(), //this is in bytes
   type: text("type").notNull(), //if it is some type its ok or default "folder"
 
   //storage information
@@ -21,7 +22,7 @@ export const files = pgTable("files", {
 
   //ownership
   userId: text("user_id").notNull(),
-  parentId: uuid("parent_id").notNull(), //parent folder id, null for root item
+  parentId: uuid("parent_id"), //parent folder id, null for root item
 
   //flags
   isFolder: boolean("is_folder").default(false).notNull(),
